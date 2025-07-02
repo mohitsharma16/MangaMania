@@ -1,31 +1,31 @@
 package com.example.mangamania.ui.screen.home
 
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.lazy.grid.*
 import androidx.compose.material3.*
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHostController
-import com.example.mangamania.ui.components.MangaCard
+import com.example.mangamania.ui.components.BaseScaffold
 import com.example.mangamania.ui.components.SectionTitle
-import com.example.mangamania.ui.theme.MangaManiaTheme
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(navController: NavHostController) {
-    Scaffold(
-        topBar = { TopAppBar(title = { Text("MangaMania") }) }
-    ) { contentPadding -> // 👈 Receive contentPadding here
+    BaseScaffold(
+        navController = navController,
+        title = "MangaMania"
+    ) { contentPadding ->
         Column(
             modifier = Modifier
-                .padding(contentPadding) // 👈 Use it here
-                .padding(16.dp) // 👈 Your own padding
+                .padding(contentPadding)
+                .padding(16.dp)
         ) {
             SectionTitle(title = "Home")
-            Text("Welcome to MangaMania Home!", color = MaterialTheme.colorScheme.onBackground)
+            Text(
+                text = "Welcome to MangaMania Home!",
+                color = MaterialTheme.colorScheme.onBackground,
+                style = MaterialTheme.typography.bodyLarge
+            )
         }
     }
 }
-
