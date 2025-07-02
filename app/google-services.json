@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "730694765406",
+    "firebase_url": "https://mangamania-16dd7-default-rtdb.firebaseio.com",
+    "project_id": "mangamania-16dd7",
+    "storage_bucket": "mangamania-16dd7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:730694765406:android:bda62906906bda22bc9dcf",
+        "android_client_info": {
+          "package_name": "com.example.mangamania"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjY_hfeQLcIqqPRaClwU4XfW58OCLrPoY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
